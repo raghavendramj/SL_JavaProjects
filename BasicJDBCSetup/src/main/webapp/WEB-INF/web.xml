@@ -1,0 +1,85 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>InitialzeDatabase</servlet-name>
+  	<servlet-class>com.simplilearn.servlets.InitialzeDatabase</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>OptimsedJDBCServletSetup</servlet-name>
+  	<display-name>OptimsedJDBCServletSetup</display-name>
+  	<description></description>
+  	<servlet-class>com.simplilearn.servlets.OptimsedJDBCServletSetup</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>InsertQueryServlet</servlet-name>
+  	<display-name>InsertQueryServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.simplilearn.servlets.InsertQueryServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CreateSelectDropDatabase</servlet-name>
+  	<display-name>CreateSelectDropDatabase</display-name>
+  	<description></description>
+  	<servlet-class>com.simplilearn.servlets.CreateSelectDropDatabase</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>StoredProceduresExamples</servlet-name>
+  	<display-name>StoredProceduresExamples</display-name>
+  	<description></description>
+  	<servlet-class>com.simplilearn.servlets.StoredProceduresExamples</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateQueryServlet</servlet-name>
+  	<display-name>UpdateQueryServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.simplilearn.servlets.crud.UpdateQueryServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteQueryServlet</servlet-name>
+  	<display-name>DeleteQueryServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.simplilearn.servlets.crud.DeleteQueryServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ProductServletyts</servlet-name>
+  	<display-name>ProductServletyts</display-name>
+  	<description></description>
+  	<servlet-class>com.simplilearn.servlets.ProductServletyts</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>InitialzeDatabase</servlet-name>
+  	<url-pattern>/initializeDatabase</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>OptimsedJDBCServletSetup</servlet-name>
+  	<url-pattern>/optimisedInit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>InsertQueryServlet</servlet-name>
+  	<url-pattern>/insertQuery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CreateSelectDropDatabase</servlet-name>
+  	<url-pattern>/databaseOperations</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>StoredProceduresExamples</servlet-name>
+  	<url-pattern>/storedProcs</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateQueryServlet</servlet-name>
+  	<url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteQueryServlet</servlet-name>
+  	<url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ProductServletyts</servlet-name>
+  	<url-pattern>/products</url-pattern>
+  </servlet-mapping>
+</web-app>
