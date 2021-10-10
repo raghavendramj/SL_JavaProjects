@@ -26,11 +26,9 @@ public class ListProducts extends HttpServlet {
 		super();
 	}
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		StandardServiceRegistry standardServiceRegistry = new StandardServiceRegistryBuilder()
-				.configure("hibernates.cfg.xml").build();
+		StandardServiceRegistry standardServiceRegistry = new StandardServiceRegistryBuilder().configure("hibernates.cfg.xml").build();
 		Metadata metaData = new MetadataSources(standardServiceRegistry).getMetadataBuilder().build();
 		SessionFactory sessionFactory = metaData.getSessionFactoryBuilder().build();
 		Session session = sessionFactory.openSession();
