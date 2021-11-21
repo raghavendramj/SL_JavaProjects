@@ -1,0 +1,65 @@
+#server:
+#  port: 8082
+#
+#spring:
+#  profiles:
+#    active: qa
+#
+#---
+#spring:
+#  datasource:
+#    password: 1234
+#    url: jdbc:postgresql://localhost:5433/dcbapp
+#    username: postgres
+#  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        format_sql: true
+#    show-sql: true
+#  config:
+#    activate:
+#      on-profile: dev
+#
+#---
+#spring:
+#  datasource:
+#    password: 1234
+#    url: jdbc:postgresql://localhost:5433/dcbapp-prod
+#    username: postgres
+#  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        format_sql: true
+#    show-sql: true
+#  config:
+#    activate:
+#      on-profile: prod
+#---
+#spring:
+#  datasource:
+#    password: 1234
+#    url: jdbc:postgresql://localhost:5433/dcbapp-qa
+#    username: postgres
+#  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        format_sql: true
+#    show-sql: true
+#  config:
+#    activate:
+#      on-profile: qa
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#        exclude: "env, beans"
