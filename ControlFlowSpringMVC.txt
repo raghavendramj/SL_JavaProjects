@@ -1,0 +1,14 @@
+	Request:
+		http://localhost:8181/Week01_Project/users/list
+		-> DispatcherServlet/FrontContoller
+			-> <context:component-scan base-package="com.simplilearn" />
+				-> UserController -> /users/
+					-> /users/list/
+						-> UserService
+							-> UserServiceImpl
+								-> findAll
+									-> session.createQuery("from User").list();
+									
+		DispatcherServlet/FrontContoller
+			ViewName : 	/WEB-INF/views/list-Users.jsp
+			Model : Model -> Users 
